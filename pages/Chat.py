@@ -49,6 +49,7 @@ with st.chat_message("assistant"):
             i += 1
 
         message_placeholder.markdown(full_response)
+        progress.empty()
     else:
         assistant_response = random.choice(
             ["Hello there! How can I assist you today?", "Hi there! Is there anything I can help you with?",
