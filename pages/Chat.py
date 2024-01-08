@@ -4,16 +4,14 @@ import requests
 import streamlit as st
 import numpy as np
 
-import streamlit as st
 import random
-import time
 
 api_url = st.secrets["API_BASE_URL"]
 
 
 st.set_page_config(page_title="Chat with PlantaAI", page_icon='🌱', layout='wide')
 
-st.title("Simple chat")
+st.title("PlantaAI Chat Bot")
 
 # Initialize chat history
 if "messages" not in st.session_state:
