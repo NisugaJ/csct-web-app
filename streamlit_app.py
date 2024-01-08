@@ -14,3 +14,23 @@ sidebar.write(':grey[Affordable plant based food better than meat]')
 
 
 st.write('### Welcome to Planta!')
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+   st.link_button(
+       "Search",
+       "/Search"
+       )
+
+with col2:
+   st.link_button(
+       "Chat",
+       "/Chat"
+       )
+
+with col3:
+   st.link_button(
+       "All Products",
+       "/All_Products"
+       )
