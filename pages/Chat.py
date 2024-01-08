@@ -8,6 +8,9 @@ import streamlit as st
 import random
 import time
 
+api_url = st.secrets["API_BASE_URL"]
+
+
 st.set_page_config(page_title="Chat with PlantaAI", page_icon='🌱', layout='wide')
 
 st.title("Simple chat")
@@ -36,7 +39,7 @@ with st.chat_message("assistant"):
 
     if prompt:
         progress = st.progress(0)
-        r = requests.post('http://127.0.0.1:5842/v1/query', json.dumps({'q': prompt}), stream=True)
+        r = requests.post(f'{api_url}query', json.dumps({'q': prompt}), stream=True)
         i = 1
         for chunk in r.iter_lines(decode_unicode=True, delimiter=' '):
             print(chunk)
