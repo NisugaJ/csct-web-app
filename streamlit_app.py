@@ -15,7 +15,7 @@ sidebar.write(':grey[Affordable plant based food better than meat]')
 
 st.write('### Welcome to Planta!')
 
-col1, col2, col3 = st.columns(3)
+col1, col2, col3 = st.columns([2, 1, 2], gap="")
 
 with col1:
    st.link_button(
