@@ -96,7 +96,8 @@ search_page_columns = [
   },
   {
     "headerName": "CUSTOMER RATING (1-5)",
-    "field": "customer_rating"
+    "field": "customer_rating",
+    "pinned": "left"
   },
   {
     "headerName": "DESCRIPTION",
@@ -236,7 +237,8 @@ search_page_columns = [
   },
   {
     "headerName": "PRICE SELLING PRICE",
-    "field": "price_selling_price"
+    "field": "price_selling_price",
+    "pinned": "left"
   },
   {
     "headerName": "PRODUCT ID",
