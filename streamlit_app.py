@@ -10,10 +10,11 @@ st.set_page_config(page_title="Home", page_icon='🌱', layout='wide')
 
 sidebar = st.sidebar
 sidebar.title(':green[Planta]', anchor=False)
-sidebar.write(':grey[Affordable plant based food better than meat]')
+sidebar.write(':grey[Affordable plant-based food better than meat]')
 
 
 st.write('### Welcome to Planta!')
+st.write('##### :grey[Affordable plant-based food better than meat]')
 st.divider()
 left_col2, left_col1, col1, col2, col3, right_col1, right_col2 = st.columns([1, 1, 3, 3, 3, 1, 1])
 
