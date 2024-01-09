@@ -53,7 +53,19 @@ with st.chat_message("assistant"):
             ["Hello there! How can I assist you today?", "Hi there! Is there anything I can help you with?",
                 "Do you need help?", ]
         )
-        full_response = assistant_response
+        full_response = assistant_response.join(
+            """I'm PlantaAI. I can help you with plant-based and meat/dairy products. 
+            I can help with below scenarios:
+             
+             1. Compare a given 
+            plant-based product and a given meat/dairy product based on prices, weight, ingredients, nutrition's, 
+            and much more.
+            
+            2. Select the best plant-based product based on your preferences.
+            
+            """
+        )
+
         st.markdown(assistant_response)
 
 # Add assistant response to chat history
