@@ -1,17 +1,7 @@
 import streamlit as st
-from st_pages import show_pages, Page
 
 st.set_page_config(page_title="Home", page_icon='🌱', layout='wide')
 
-show_pages(
-    [
-        Page("streamlit_app.py", "Home", "🏠"),
-        Page("pages/All Products.py", "All Products", ":document:"),
-        Page("pages/Chat.py", "Chat", ":bot:"),
-        Page("pages/Search.py", "Search", ":search:"),
-        Page("pages/About.py", "About", ":info:"),
-    ]
-)
 
 # Sidebar
 sidebar = st.sidebar
