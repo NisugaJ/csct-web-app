@@ -63,7 +63,7 @@ with st.chat_message("assistant"):
 
         full_response = assistant_response + add_on
 
-        st.markdown(assistant_response)
+        st.markdown(full_response)
 
 # Add assistant response to chat history
 st.session_state.messages.append({"role": "assistant", "content": full_response})
