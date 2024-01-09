@@ -54,11 +54,11 @@ with st.chat_message("assistant"):
                 "Do you need help?", ]
         )
 
-        add_on = "I'm PlantaAI Chat Bot. I can help you with plant-based and meat/dairy products. \
-            I can help with below scenarios: \
+        add_on = "\n\n I'm PlantaAI Chat Bot. I can help you with plant-based and meat/dairy products. \
+            I can help with below scenarios: \n\n  \
             1. Compare a given \
             plant-based product and a given meat/dairy product based on prices, weight, ingredients, nutrition's, \
-            and much more. \
+            and much more.\n \
             2. Select the best plant-based product based on your preferences."
 
         full_response = assistant_response + add_on
