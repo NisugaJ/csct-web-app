@@ -12,7 +12,7 @@ st.set_page_config(page_title="All Products", page_icon='🌱', layout='wide')
 
 all_products = requests.get(f"{api_url}/products/all").json()
 
-st.info(f"{len(all_products)} products are available")
+st.info(f"{len(all_products)} plant-based products are available")
 
 
 df = pd.DataFrame(
