@@ -54,7 +54,7 @@ with st.chat_message("assistant"):
                 "Do you need help?", ]
         )
         full_response = assistant_response.join(
-            """I'm PlantaAI. I can help you with plant-based and meat/dairy products. 
+            """I'm PlantaAI Chat Bot. I can help you with plant-based and meat/dairy products. 
             I can help with below scenarios:
              
              1. Compare a given 
