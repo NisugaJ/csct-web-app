@@ -54,16 +54,16 @@ with st.chat_message("assistant"):
                 "Do you need help?", ]
         )
 
-        add_on = "\n\n I'm PlantaAI Chat Bot. I can help you with plant-based and meat/dairy products. \
-            I can help with below scenarios: \n\n  \
-            1. Compare a given \
-            plant-based product and a given meat/dairy product based on prices, weight, ingredients, nutrition's, \
-            and much more.\n \
-            2. Select the best plant-based product based on your preferences."
-
-        full_response = assistant_response + add_on
+        full_response = assistant_response
 
         st.markdown(full_response)
+        st.markdown(f" I'm PlantaAI Chat Bot. I can help you with plant-based and meat/dairy products.I can help with below scenarios.")
+        st.markdown(f"1.  Compare a given \
+            plant-based product and a given meat/dairy product based on prices, weight, ingredients, nutrition's, \
+            and much more.")
+        st.markdown(
+            f"2. Select the best plant-based product based on your preferences."
+            )
 
 # Add assistant response to chat history
 st.session_state.messages.append({"role": "assistant", "content": full_response})
