@@ -12,6 +12,8 @@ st.session_state.search_results = []
 st.session_state.search_q = ''
 st.session_state.search_filter = {}
 
+st.set_page_config(page_title="Search Planta", page_icon='🌱', layout='wide')
+
 
 st.write('##### Search for your plant based food!')
 

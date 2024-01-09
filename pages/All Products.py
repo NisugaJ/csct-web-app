@@ -7,6 +7,9 @@ from streamlit_utils import filter_dataframe
 
 api_url = st.secrets["API_BASE_URL"]
 
+st.set_page_config(page_title="All Products", page_icon='🌱', layout='wide')
+
+
 all_products = requests.get(f"{api_url}/products/all").json()
 
 st.info(f"{len(all_products)} products are available")
