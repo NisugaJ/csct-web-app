@@ -21,7 +21,7 @@ all_products = requests.get(f"{api_url}/products/all?type=PLANT_BASED").json()
 
 st.info(f"{len(all_products)} plant-based products are available")
 
-search_query = st.text_input('Search', key='search_bar',  placeholder="Search anythin g here. (E.g. cost-effective plant-based food)")
+search_query = st.text_input('Search', key='search_bar',  placeholder="Search anything here. (E.g. cheese )")
 
 if len(search_query) > 1:
     send_search_request(search_query, st.session_state.search_filter)
