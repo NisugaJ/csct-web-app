@@ -17,7 +17,10 @@ st.info(f"{len(all_products)} products are available")
 
 df = pd.DataFrame(
     all_products,
+
+
 )
+df.drop("product_id", axis=1, inplace=True)
 
 # filter_dataframe(df)
 
