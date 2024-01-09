@@ -235,7 +235,7 @@ search_page_columns = [
     "field": "price_raw_weight"
   },
   {
-    "headerName": "PRICE SELLING PRICE",
+    "headerName": "PRICE SELLING PRICE (£)",
     "field": "price_selling_price",
   },
   {
