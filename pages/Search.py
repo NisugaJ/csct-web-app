@@ -32,6 +32,6 @@ df = pd.DataFrame(
 
 # filter_dataframe(df)
 
-ag_grid = AgGrid(df,  allow_unaligned_rows=True, theme='streamlit', height=400, width='100%', enable_quicksearch=True, gridOptions={
+ag_grid = AgGrid(df, theme='streamlit', height=400, width='100%', enable_quicksearch=True, gridOptions={
     'columnDefs': search_page_columns
 })
