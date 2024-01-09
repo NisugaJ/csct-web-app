@@ -16,6 +16,6 @@ df = pd.DataFrame(
     all_products,
 )
 
-filter_dataframe(df)
+# filter_dataframe(df)
 
-ag_grid = AgGrid(df,  allow_unaligned_rows=True, theme='streamlit', height=400, width='100%', enable_quicksearch=True)
+ag_grid = AgGrid(df,  fit_columns_on_grid_load=True, allow_unaligned_rows=True, theme='streamlit', height=400, width='100%', enable_quicksearch=True)
