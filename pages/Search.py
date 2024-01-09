@@ -17,7 +17,7 @@ st.set_page_config(page_title="Search Planta", page_icon='🌱', layout='wide')
 
 st.write('##### Search for your plant based food!')
 
-all_products = requests.get(f"{api_url}/products/all").json()
+all_products = requests.get(f"{api_url}/products/all?type=PLANT_BASED").json()
 
 st.info(f"{len(all_products)} products are avaiable")
 
