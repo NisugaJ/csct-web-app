@@ -36,18 +36,15 @@ with st.chat_message("assistant"):
     full_response = ""
 
     if prompt:
-        progress = st.progress(0)
         r = requests.post(f'{api_url}/query', json.dumps({'q': prompt}), stream=True)
         i = 1
         for chunk in r.iter_lines(decode_unicode=True, delimiter=' '):
             print(chunk)
-            progress.progress(i)
             full_response += chunk + " "
             message_placeholder.markdown(full_response + "▌")
             i += 1
 
         message_placeholder.markdown(full_response)
-        progress.empty()
     else:
         assistant_response = random.choice(
             ["Hello there! How can I assist you today?", "Hi there! Is there anything I can help you with?",
