@@ -20,7 +20,7 @@ df = pd.DataFrame(
 
 
 )
-df = df.drop("product_id", axis=1, inplace=True)
+df = df.drop("product_id")
 
 # filter_dataframe(df)
 
