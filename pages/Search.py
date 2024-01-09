@@ -19,7 +19,7 @@ st.write('##### Search for your plant based food!')
 
 all_products = requests.get(f"{api_url}/products/all?type=PLANT_BASED").json()
 
-st.info(f"{len(all_products)} products are avaiable")
+st.info(f"{len(all_products)} plant-based products are available")
 
 search_query = st.text_input('Search', key='search_bar',  placeholder="Search anythin g here. (E.g. cost-effective plant-based food)")
 
