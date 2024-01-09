@@ -10,7 +10,7 @@ api_url = st.secrets["API_BASE_URL"]
 
 st.session_state.search_results = []
 st.session_state.search_q = ''
-st.session_state.search_filter = {}
+st.session_state.search_filter = {"product_type": "PLANT_BASED"}
 
 st.set_page_config(page_title="Search Planta", page_icon='🌱', layout='wide')
 
