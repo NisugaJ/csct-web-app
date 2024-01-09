@@ -57,7 +57,9 @@ with st.chat_message("assistant"):
         full_response = assistant_response
 
         st.markdown(full_response)
-        st.markdown(f" I'm PlantaAI Chat Bot. I can help you with plant-based and meat/dairy products. I can specially help you with below scenarios.")
+        st.markdown(f" I'm PlantaAI Chat Bot. ")
+        st.markdown(f" I can help you with plant-based and meat/dairy products. ")
+        st.markdown(f"I can specially help you with below scenarios.")
         st.markdown(f"1.  Compare a given \
             plant-based product and a given meat/dairy product based on prices, weight, ingredients, nutrition's, \
             and much more.")
