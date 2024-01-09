@@ -53,8 +53,8 @@ with st.chat_message("assistant"):
             ["Hello there! How can I assist you today?", "Hi there! Is there anything I can help you with?",
                 "Do you need help?", ]
         )
-        full_response = assistant_response.join(
-            """I'm PlantaAI Chat Bot. I can help you with plant-based and meat/dairy products. 
+
+        add_on = """I'm PlantaAI Chat Bot. I can help you with plant-based and meat/dairy products. 
             I can help with below scenarios:
              
              1. Compare a given 
@@ -64,7 +64,8 @@ with st.chat_message("assistant"):
             2. Select the best plant-based product based on your preferences.
             
             """
-        )
+
+        full_response = assistant_response + add_on
 
         st.markdown(assistant_response)
 
