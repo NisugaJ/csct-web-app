@@ -23,7 +23,7 @@ with col1:
 
 with col2:
    st.link_button(
-       "Chat",
+       "Chat with PlantaAI",
        "/Chat",
        use_container_width=True
    )
